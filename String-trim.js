@@ -25,3 +25,5 @@ function trim(str, size) {
     return size >= str ? str : str.slice(0, size) + '...';
   } else return size >= str ? str : str.slice(0, size-3); + '...';
 }
+
+// or
