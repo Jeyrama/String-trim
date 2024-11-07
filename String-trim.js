@@ -19,3 +19,9 @@ Requested maximum length will be greater than 0. Input string will not be empty.
 
 
 // Solution
+
+function trim(str, size) {
+  if (size <= 3) {
+    return size >= str ? str : str.slice(0, size) + '...';
+  } else return size >= str ? str : str.slice(0, size-3); + '...';
+}
